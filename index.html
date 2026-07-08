@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shree Shyam Rakhi</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+ <header>
+
+    <div class="logo">Shree Shyam Rakhi</div>
+
+    <div class="cart-icon">
+        🛒 <span id="cart-count">0</span>
+    </div>
+
+    <div class="menu-btn" onclick="toggleMenu()">
+        ☰
+    </div>
+
+    <nav id="menu">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Categories</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+
+</header>
+
+    <!-- Hero Section -->
+<section class="search-section">
+
+    <input
+        type="text"
+        id="search"
+        placeholder="🔍 Search Rakhi..."
+        onkeyup="searchProducts()">
+
+</section>
+<!-- Products Section -->
+
+<section class="products">
+
+    <h2>Our Premium Rakhi Collection</h2>
+
+    <div class="product-grid">
+
+        <!-- Product 1 -->
+
+        <div class="card product-card">
+          <a href="products.html?id=1">
+    <img src="images/products/rakhi1.jpg" alt="Designer Rakhi">
+</a>
+
+<h3>
+    <a href="products.html?id=1">Designer Rakhi</a>
+</h3>
+
+            
+
+            <p class="price">₹299</p>
+
+            <button onclick="addToCart('Designer Rakhi',299)">
+                Add to Cart
+            </button>
+
+        </div>
+
+        <!-- Product 2 -->
+
+       <div class="card product-card">
+
+            <a href="products.html?id=2">
+    <img src="images/products/rakhi2.jpg" alt="Premium Rakhi">
+</a>
+
+<h3>
+    <a href="products.html?id=2">Premium Rakhi</a>
+</h3>
+
+            <h3>Premium Rakhi</h3>
+
+            <p class="price">₹499</p>
+
+            <button onclick="addToCart('Premium Rakhi',499)">
+                Add to Cart
+            </button>
+
+        </div>
+
+        <!-- Product 3 -->
+
+        <div class="card product-card">
+
+         <a href="products.html?id=3">
+    <img src="images/products/rakhi3.jpg" alt="Luxury Rakhi">
+</a>
+
+<h3>
+    <a href="products.html?id=3">Luxury Rakhi</a>
+</h3>
+
+            <h3>Luxury Rakhi</h3>
+
+            <p class="price">₹699</p>
+
+            <button onclick="addToCart('Luxury Rakhi',699)">
+                Add to Cart
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<h2>Our Premium Collection</h2>
+
+<div class="product-grid">
+
+<div class="card">
+<img src="images/products/rakhi1.jpg" alt="Rakhi 1">
+<h3>Premium Designer Rakhi</h3>
+<p class="price"><del>₹299</del> ₹199</p>
+<p class="stock">✅ In Stock</p>
+<button onclick="addToCart('Premium Designer Rakhi',199)">
+Add to Cart
+</button>
+</div>
+
+<div class="card">
+<img src="images/products/rakhi2.jpg" alt="Rakhi 2">
+<h3>Traditional Rakhi</h3>
+<p class="price"><del>₹349</del> ₹249</p>
+<p class="stock">✅ In Stock</p>
+<button onclick="addToCart('Premium Designer Rakhi',199)">
+Add to Cart
+</button>
+</div>
+
+<div class="card">
+<img src="images/products/rakhi3.jpg" alt="Rakhi 3">
+<h3>Luxury Rakhi</h3>
+<p class="price"><del>₹399</del> ₹299</p>
+<p class="stock">✅ In Stock</p>
+<button onclick="addToCart('Premium Designer Rakhi',199)">
+Add to Cart
+</button>
+</div>
+
+</div>
+
+</section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <h3>Shree Shyam Rakhi</h3>
+
+        <p>Celebrate Every Bond With Love ❤️</p>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
