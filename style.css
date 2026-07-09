@@ -482,3 +482,7 @@ function searchProducts(){
     });
 
 }
+.cart-icon{
+    text-decoration:none;
+    color:white;
+}
