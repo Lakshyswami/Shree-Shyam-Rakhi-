@@ -46,9 +46,12 @@ function addToCart(name, price) {
     }
 
     saveCart();
+
+console.log(cart);
+
 updateCartCount();
-    alert(name + " Cart me add ho gayi!");
-}
+
+alert(name + " Cart me add ho gayi!");
 
 function loadCart(){
 
