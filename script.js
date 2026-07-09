@@ -150,9 +150,17 @@ function toggleMenu(){
 }
 
 window.onload = function () {
-    loadCart();
+
     updateCartCount();
-    loadProduct();
+
+    if (document.getElementById("cart-items")) {
+        loadCart();
+    }
+
+    if (document.getElementById("product-image")) {
+        loadProduct();
+    }
+
 };
 function updateCartCount() {
     let count = 0;
